@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* Navigation */
+
+nav{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 2;
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+}
+
+ul li{
+    list-style: none;
+    color: #fff;
+    margin: 1%;
+}
+
+/* Wrapper */
+.wrapper{
+    margin: auto;
+    max-width: 700px;
+}
+
+.wrapper > div{
+    margin: 2%;
+}
+
+/* Banner */
+.banner{
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* Selection */
+.container_selections{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2%;
+}
+
+.selection{
+    background-color: #f2f2f2;
+    color: darkgray;
+
+    height: 140px;
+    width: 33%;
+
+    text-align: center;
+    font-size: x-small;
+}
+
+/* selection: hieu ung bac thang */
+
+.selection:nth-child(1){
+    position: relative;
+    top: 5px;
+}
+
+.selection:nth-child(2){
+    position: relative;
+    top: 15px;
+}
+
+.selection:nth-child(3){
+    position: relative;
+    top: 25px;
+}
+
+.container_selections{
+    max-height: 150px;
+    overflow: hidden;
+}
+
+/* Content */
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3; 
+    -webkit-column-gap: 20px; 
+    column-gap: 20px;
+    -webkit-column-rule: solid 1px #ccc;
+    column-rule: solid 1px #ccc;
+}
+
+/* Columns */
+.container_columns{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2%;
+}
+
+.column{
+    padding: 1%;
+    width: 49%;
+    background-color: #f2f2f2;
+}
+
+.column img{
+    width: 100%;
+}
